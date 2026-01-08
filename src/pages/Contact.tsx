@@ -188,6 +188,14 @@ const Contact = () => {
                   <button type="submit" className="btn-hero-primary w-full">
                     Submit Request
                   </button>
+                  
+                  <div className="bg-secondary/10 border border-secondary/20 rounded-lg p-4">
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      <strong className="text-foreground\">Privacy & Independence Notice:</strong> Your information is secure and confidential. 
+                      We maintain complete independence from service providers and never share your data for enrollment or marketing purposes. 
+                      We never request provider account passwords. Your data is used only for OMNINET SOLUTIONS assistance services.
+                    </p>
+                  </div>
                 </form>
               </div>
             </div>

@@ -18,17 +18,24 @@ const AdvertisingDisclosure = () => {
               </p>
               
               <div className="bg-card rounded-xl p-6 border border-border mb-8">
-                <p className="text-foreground font-bold mb-2">Important Notice</p>
+                <p className="text-foreground font-bold mb-2">Important Independence Notice</p>
                 <p className="text-muted-foreground">
-                  We are an independent authorized dealer and not the service provider. 
-                  We may receive compensation for connecting customers with service providers.
+                  OMNINET SOLUTIONS is an independent third-party assistance startup, not affiliated with any internet, cable, or streaming service provider. 
+                  We provide guidance and assistance services only. We may receive referral compensation when customers choose to contact providers through our assistance services.
                 </p>
               </div>
               
               <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Compensation Disclosure</h2>
               <p className="text-muted-foreground mb-4">
-                OMNINET SOLUTIONS may receive compensation from service providers when you sign up 
-                for services through our website or by calling our phone numbers.
+                OMNINET SOLUTIONS may receive referral compensation from service providers when customers engage with providers 
+                through our assistance services. This referral model allows us to offer our guidance services. All compensation is received 
+                from providers, not from customers. Our assistance fee structure remains transparent and separate from any provider compensation.
+              </p>
+              
+              <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Our Independence</h2>
+              <p className="text-muted-foreground mb-4">
+                Despite receiving referral compensation, we maintain complete editorial independence. Our guidance is based on educational 
+                information and customer needs, not on provider compensation. We serve the customer's interests in finding appropriate connectivity solutions.
               </p>
               
               <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Pricing Information</h2>

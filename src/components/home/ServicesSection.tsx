@@ -41,7 +41,10 @@ const ServicesSection = () => {
             Our <span className="text-gradient">Services</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Choose from our range of premium connectivity solutions designed for modern homes
+            Explore our independent guidance services for navigating connectivity options and finding solutions tailored to your household
+          </p>
+          <p className="text-sm text-muted-foreground mt-4 italic">
+            Note: We provide education and assistance only. We do not sell or install internet, cable, or streaming services.
           </p>
         </div>
         

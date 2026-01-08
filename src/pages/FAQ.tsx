@@ -6,39 +6,43 @@ import { useState } from "react";
 const faqs = [
   {
     question: "Are you an official cable or internet service provider?",
-    answer: "No. OMNINET SOLUTIONS is an independent third-party assistance platform. We are not affiliated with, endorsed by, or sponsored by any cable, internet, or streaming service provider."
+    answer: "No. OMNINET SOLUTIONS operates as an independent startup launched in 2026 with zero affiliation to any cable, internet, or streaming provider. We exist solely to assist customers in navigating their options, not to sell or install services."
   },
   {
     question: "Do you sell internet, cable, or streaming plans?",
-    answer: "No. We do not sell internet, cable, or streaming plans directly. We provide guidance and assistance services to help you understand and navigate your connectivity options."
+    answer: "Absolutely not. We do not sell, activate, or install any connectivity services. Our entire business model centers on providing educational guidance and assistance to help you understand and evaluate your connectivity options independently."
   },
   {
     question: "Do you charge for your services?",
-    answer: "Yes. Our service fees are separate from any provider charges. We charge a fee for our guidance, assistance, and support services. Provider billing remains completely separate."
+    answer: "Yes. We operate on a service fee model. Your payment to OMNINET SOLUTIONS covers our assistance, consultation, and support services exclusively. This fee is entirely separate from any charges billed by actual service providers."
   },
   {
     question: "Will I still be billed by my service provider?",
-    answer: "Yes. Provider billing remains unchanged. Our assistance fees are separate from any charges you may incur from service providers."
+    answer: "Yes, provider billing is completely unaffected by our services. Our assistance fee is a separate, standalone charge. You maintain your existing provider relationship and billing with no changes."
   },
   {
     question: "Do you need my account passwords or sensitive information?",
-    answer: "No. We never request provider account passwords or sensitive credentials. We only gather basic information needed to assist you with general guidance."
+    answer: "Never. We never request provider account credentials, passwords, PINs, or any sensitive personal information. We operate independently and have no need for access to your provider accounts."
   },
   {
     question: "Which providers do you support?",
-    answer: "We may reference multiple internet, cable, and streaming providers for educational and guidance purposes only. We have no affiliation with any provider."
+    answer: "We may reference multiple internet, cable, and streaming providers in our educational content. Our references are informational only, for comparison and guidance purposes. We hold no partnerships with any provider."
   },
   {
     question: "Are your services refundable?",
-    answer: "Yes. Refund requests may be submitted within 7 to 15 days of service purchase, subject to eligibility. Please review our Refund Policy page for complete details."
+    answer: "Yes. We offer a 7 to 15-day refund window following your service engagement, contingent on the type of assistance purchased and your individual circumstances. Detailed refund eligibility criteria are available on our dedicated Refund Policy page."
   },
   {
     question: "When I call, who am I speaking with?",
-    answer: "You are speaking with our independent assistance team at OMNINET SOLUTIONS. You are not speaking with any internet, cable, or streaming service provider."
+    answer: "You are speaking exclusively with our independent OMNINET SOLUTIONS team. Our phone lines are staffed by our own assistance representatives, not by any service provider."
   },
   {
-    question: "How can I contact your support team?",
-    answer: "Our support team is available 24/7 at 1-800-555-0199. You can also email us at support@omninetsolutions.com or use our online chat."
+    question: "Is my data shared with providers or third parties?",
+    answer: "No. We maintain strict data independence. Your information is never provided to service providers for marketing, enrollment, or any other purpose without your explicit written consent. We comply fully with privacy regulations."
+  },
+  {
+    question: "What happens after I get assistance from you?",
+    answer: "After our assistance, the choice of action is entirely yours. You may contact providers directly, request quotes, or take no action. We never enroll you in services or make changes on your behalf."
   }
 ];
 

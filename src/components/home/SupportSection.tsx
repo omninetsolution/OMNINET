@@ -6,21 +6,21 @@ const supportChannels = [
   {
     icon: Phone,
     title: "Call Us",
-    description: "Speak directly with our support experts",
-    action: "1-800-SWIFT-NET",
+    description: "Speak directly with our independent assistance experts",
+    action: "1-800-555-0199",
     available: "24/7"
   },
   {
     icon: MessageCircle,
     title: "Live Chat",
-    description: "Get instant answers to your questions",
+    description: "Get instant answers from our support team",
     action: "Start Chat",
     available: "24/7"
   },
   {
     icon: Mail,
     title: "Email Support",
-    description: "Send us a detailed inquiry",
+    description: "Send us your inquiry for personalized assistance",
     action: "support@omninetsolutions.com",
     available: "Response in 2hrs"
   }
