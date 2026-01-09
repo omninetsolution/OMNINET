@@ -70,25 +70,36 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Improve touch targets on mobile */
+  @media (max-width: 640px) {
+    button, a {
+      min-height: 44px;
+      min-width: 44px;
+    }
   }
 }
 
 @layer components {
   /* Hero button variants */
   .btn-hero-primary {
-    @apply px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300;
+    @apply px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg transition-all duration-300;
     background: var(--gradient-primary);
     color: hsl(var(--primary-foreground));
     box-shadow: var(--shadow-glow);
+    min-height: 48px;
   }
 
   .btn-hero-primary:hover {
@@ -96,8 +107,14 @@
     box-shadow: 0 0 60px hsl(188 100% 50% / 0.5);
   }
 
+  @media (max-width: 640px) {
+    .btn-hero-primary:active {
+      transform: scale(0.98);
+    }
+  }
+
   .btn-hero-secondary {
-    @apply px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 border-2;
+    @apply px-6 sm:px-8 py-3 sm:py-4 rounded-lg sm:rounded-xl font-bold text-base sm:text-lg transition-all duration-300 border-2;
     border-color: hsl(var(--primary));
     color: hsl(var(--primary));
     background: transparent;
@@ -125,7 +142,7 @@
   }
 
   .card-plan {
-    @apply relative overflow-hidden rounded-2xl p-6 transition-all duration-300;
+    @apply relative overflow-hidden rounded-xl sm:rounded-2xl p-4 sm:p-6 transition-all duration-300;
     background: var(--gradient-card);
     border: 1px solid hsl(var(--border));
   }
@@ -135,9 +152,15 @@
     box-shadow: var(--shadow-glow);
   }
 
+  @media (max-width: 640px) {
+    .card-plan:active {
+      transform: scale(0.98);
+    }
+  }
+
   /* Stat card floating */
   .stat-card {
-    @apply px-6 py-4 rounded-xl backdrop-blur-md;
+    @apply px-4 sm:px-6 py-3 sm:py-4 rounded-lg sm:rounded-xl backdrop-blur-md;
     background: hsl(var(--card) / 0.8);
     border: 1px solid hsl(var(--border));
     box-shadow: var(--shadow-card);

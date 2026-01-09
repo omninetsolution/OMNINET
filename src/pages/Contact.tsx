@@ -31,9 +31,9 @@ const Contact = () => {
         />
         
         {/* Independent Disclosure */}
-        <section className="py-8 bg-primary/10 border-y border-primary/20">
-          <div className="container mx-auto px-4">
-            <p className="text-center text-sm text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+        <section className="py-6 sm:py-8 bg-primary/10 border-y border-primary/20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-center text-xs sm:text-sm text-muted-foreground leading-relaxed max-w-4xl mx-auto">
               <strong className="text-foreground">Important:</strong> OMNINET SOLUTIONS is an independent third-party service assistance platform. 
               We are not affiliated with any internet, cable, or streaming provider. Our team provides guidance services for a separate fee. 
               When you call, you will speak with our independent assistance team, not a service provider.
@@ -41,16 +41,16 @@ const Contact = () => {
           </div>
         </section>
         
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <section className="py-12 sm:py-16 lg:py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
               {/* Contact Info */}
               <div>
-                <h2 className="font-display text-3xl font-bold text-foreground mb-8">
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground mb-6 sm:mb-8">
                   Request <span className="text-gradient">Assistance</span>
                 </h2>
                 
-                <div className="space-y-6 mb-12">
+                <div className="space-y-4 sm:space-y-6 mb-8 sm:mb-12">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-primary" />

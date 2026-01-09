@@ -18,15 +18,15 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="relative w-10 h-10">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+            <div className="relative w-8 h-8 sm:w-10 sm:h-10">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary via-accent to-primary opacity-90"></div>
               <div className="absolute inset-[2px] rounded-lg bg-background flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-[24px] sm:h-[24px]">
                   <circle cx="12" cy="12" r="2" className="fill-primary" />
                   <circle cx="6" cy="6" r="1.5" className="fill-primary" opacity="0.8" />
                   <circle cx="18" cy="6" r="1.5" className="fill-accent" opacity="0.8" />
@@ -40,10 +40,10 @@ const Navbar = () => {
               </div>
             </div>
             <div className="flex flex-col leading-none">
-              <span className="font-display text-sm font-bold text-foreground tracking-wider">
+              <span className="font-display text-xs sm:text-sm font-bold text-foreground tracking-wider">
                 OMNINET
               </span>
-              <span className="font-display text-xs font-semibold text-primary tracking-wide">
+              <span className="font-display text-[10px] sm:text-xs font-semibold text-primary tracking-wide">
                 SOLUTIONS
               </span>
             </div>

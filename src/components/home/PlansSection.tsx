@@ -44,20 +44,20 @@ const plans = [
 
 const PlansSection = () => {
   return (
-    <section className="py-24 bg-background">
-      <div className="container mx-auto px-4">
+    <section className="py-12 sm:py-16 lg:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4">
             Internet <span className="text-gradient">Plans</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Choose the speed that fits your lifestyle. All plans include unlimited data.
           </p>
         </div>
         
         {/* Plans Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -69,52 +69,52 @@ const PlansSection = () => {
             >
               {/* Popular Badge */}
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-primary text-primary-foreground text-sm font-bold px-4 py-1 rounded-full">
+                <div className="absolute -top-3 sm:-top-4 left-1/2 -translate-x-1/2">
+                  <span className="bg-primary text-primary-foreground text-xs sm:text-sm font-bold px-3 sm:px-4 py-1 rounded-full whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
               )}
               
               {/* Plan Header */}
-              <div className="text-center mb-6">
-                <h3 className="font-display text-2xl font-bold text-foreground mb-2">
+              <div className="text-center mb-4 sm:mb-6">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-foreground mb-2">
                   {plan.name}
                 </h3>
-                <p className="text-primary font-bold text-lg">{plan.speed}</p>
+                <p className="text-primary font-bold text-base sm:text-lg">{plan.speed}</p>
               </div>
               
               {/* Price */}
-              <div className="text-center mb-6">
+              <div className="text-center mb-4 sm:mb-6">
                 <div className="flex items-end justify-center gap-1">
-                  <span className="text-muted-foreground">$</span>
-                  <span className="text-5xl font-bold text-foreground">{plan.price}</span>
-                  <span className="text-muted-foreground">/mo</span>
+                  <span className="text-muted-foreground text-sm sm:text-base">$</span>
+                  <span className="text-4xl sm:text-5xl font-bold text-foreground">{plan.price}</span>
+                  <span className="text-muted-foreground text-sm sm:text-base">/mo</span>
                 </div>
               </div>
               
               {/* Features */}
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3">
-                    <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+                  <li key={feature} className="flex items-center gap-2 sm:gap-3">
+                    <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-primary" />
                     </div>
-                    <span className="text-muted-foreground">{feature}</span>
+                    <span className="text-muted-foreground text-sm sm:text-base">{feature}</span>
                   </li>
                 ))}
               </ul>
               
               {/* CTA */}
               <a
-                href="tel:+18005550199"
-                className={`flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold transition-all text-sm sm:text-base ${
+                href="tel:+18886221618"
+                className={`flex items-center justify-center gap-2 py-3 px-4 rounded-lg sm:rounded-xl font-bold transition-all text-sm sm:text-base touch-manipulation ${
                   plan.popular
                     ? "btn-hero-primary"
                     : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
                 }`}
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 flex-shrink-0" />
                 <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
                 <span className="sm:hidden">Call Now</span>
               </a>
