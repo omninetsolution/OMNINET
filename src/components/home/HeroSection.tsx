@@ -69,10 +69,10 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-              <a href="tel:+18005550199" className="btn-hero-primary group flex items-center justify-center gap-2 text-sm sm:text-base px-4 sm:px-6">
+              <a href="tel:+18886221618" className="btn-hero-primary group flex items-center justify-center gap-2 text-sm sm:text-base px-4 sm:px-6">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span className="hidden sm:inline">Call Now: 1-800-555-0199</span>
-                <span className="sm:hidden">Call: 1-800-555-0199</span>
+                <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
+                <span className="sm:hidden">Call: (888) 622-1618</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

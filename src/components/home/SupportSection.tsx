@@ -7,7 +7,7 @@ const supportChannels = [
     icon: Phone,
     title: "Call Us",
     description: "Speak directly with our independent assistance experts",
-    action: "1-800-555-0199",
+    action: "(888) 622-1618",
     available: "24/7"
   },
   {

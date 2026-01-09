@@ -57,7 +57,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-bold text-foreground mb-1">Phone</h3>
-                      <p className="text-muted-foreground">1-800-555-0199</p>
+                      <p className="text-muted-foreground">(888) 622-1618</p>
                       <p className="text-sm text-muted-foreground">Independent Assistance Team</p>
                     </div>
                   </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 
                 <div className="bg-muted/50 border border-border rounded-lg p-4">
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    <strong className="text-foreground">Call Disclosure:</strong> When you call 1-800-555-0199, 
+                    <strong className="text-foreground">Call Disclosure:</strong> When you call (888) 622-1618, 
                     you are reaching OMNINET SOLUTIONS, an independent third-party assistance platform. 
                     Our team will help guide you through connectivity options. We charge a separate service fee for our assistance.
                   </p>

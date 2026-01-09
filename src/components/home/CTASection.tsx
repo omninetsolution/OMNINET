@@ -19,10 +19,10 @@ const CTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="tel:+18005550199" className="btn-hero-primary flex items-center justify-center gap-2 text-sm sm:text-base">
+          <a href="tel:+18886221618" className="btn-hero-primary flex items-center justify-center gap-2 text-sm sm:text-base">
             <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-            <span className="hidden sm:inline">Call Now: 1-800-555-0199</span>
-            <span className="sm:hidden">Call: 1-800-555-0199</span>
+            <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
+            <span className="sm:hidden">Call: (888) 622-1618</span>
           </a>
         </div>
         

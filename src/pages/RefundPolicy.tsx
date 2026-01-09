@@ -105,7 +105,7 @@ const RefundPolicy = () => {
                   </p>
                   <ul className="space-y-3 text-muted-foreground">
                     <li>• Email: <a href="mailto:support@omninetsolutions.com" className="text-primary hover:underline">support@omninetsolutions.com</a></li>
-                    <li>• Phone: 1-800-555-0199</li>
+                    <li>• Phone: (888) 622-1618</li>
                     <li>• Subject Line: "Refund Request - [Order Number]"</li>
                   </ul>
                   <p className="text-muted-foreground mt-4">

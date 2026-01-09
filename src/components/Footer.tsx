@@ -115,7 +115,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-primary mt-0.5" />
                 <div>
-                  <p className="text-foreground font-medium">1-800-555-0199</p>
+                  <p className="text-foreground font-medium">(888) 622-1618</p>
                   <p className="text-muted-foreground text-sm">24/7 Support Available</p>
                 </div>
               </li>

@@ -37,15 +37,15 @@ const Chatbot = () => {
     const lowerMessage = message.toLowerCase();
     
     if (lowerMessage.includes("call") || lowerMessage.includes("phone") || lowerMessage.includes("contact")) {
-      return "You can reach our assistance team at 1-800-555-0199. We're available 24/7 to help you!";
+      return "You can reach our assistance team at (888) 622-1618. We're available 24/7 to help you!";
     } else if (lowerMessage.includes("service") || lowerMessage.includes("help") || lowerMessage.includes("assist")) {
       return "We provide independent guidance for internet, cable TV, and streaming services. We charge a separate service fee for our assistance. Would you like to speak with our team?";
     } else if (lowerMessage.includes("price") || lowerMessage.includes("cost") || lowerMessage.includes("fee")) {
-      return "Our service fees vary based on the type of assistance you need. Please call 1-800-555-0199 to speak with our team for detailed pricing information.";
+      return "Our service fees vary based on the type of assistance you need. Please call (888) 622-1618 to speak with our team for detailed pricing information.";
     } else if (lowerMessage.includes("refund")) {
       return "We offer refunds within 7-15 days of service purchase, subject to eligibility. Visit our Refund Policy page for details.";
     } else {
-      return "Thank you for your message! For personalized assistance, please call us at 1-800-555-0199 or email support@omninetsolutions.com. Our team is here to help!";
+      return "Thank you for your message! For personalized assistance, please call us at (888) 622-1618 or email support@omninetsolutions.com. Our team is here to help!";
     }
   };
 

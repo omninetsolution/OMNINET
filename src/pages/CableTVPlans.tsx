@@ -131,7 +131,7 @@ const CableTVPlans = () => {
                     }`}
                   >
                     <Phone className="w-4 h-4" />
-                    <span className="hidden sm:inline">Call Now: 1-800-555-0199</span>
+                    <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
                     <span className="sm:hidden">Call Now</span>
                   </a>
                 </div>

@@ -63,7 +63,7 @@ const Privacy = () => {
               <p className="text-muted-foreground mb-4">
                 For privacy-related questions, contact us at:<br />
                 Email: privacy@omninetsolutions.com<br />
-                Phone: 1-800-555-0199
+                Phone: (888) 622-1618
               </p>
             </div>
           </div>

@@ -68,11 +68,11 @@ const Navbar = () => {
 
           {/* CTA */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+18005550199" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+            <a href="tel:+18886221618" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">1-800-555-0199</span>
+              <span className="font-medium">(888) 622-1618</span>
             </a>
-            <a href="tel:+18005550199" className="btn-hero-primary text-sm px-6 py-3 flex items-center gap-2">
+            <a href="tel:+18886221618" className="btn-hero-primary text-sm px-6 py-3 flex items-center gap-2">
               <Phone className="w-4 h-4" />
               Call Now
             </a>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 className="btn-hero-primary text-center mt-4 flex items-center justify-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                Call Now: 1-800-555-0199
+                Call Now: (888) 622-1618
               </a>
             </div>
           </div>

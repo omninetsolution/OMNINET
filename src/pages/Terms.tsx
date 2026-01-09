@@ -74,7 +74,7 @@ const Terms = () => {
               <p className="text-muted-foreground mb-4">
                 For questions about these terms, contact us at:<br />
                 Email: legal@omninetsolutions.com<br />
-                Phone: 1-800-555-0199
+                Phone: (888) 622-1618
               </p>
             </div>
           </div>

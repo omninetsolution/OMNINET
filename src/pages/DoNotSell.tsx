@@ -38,7 +38,7 @@ const DoNotSell = () => {
               </p>
               <ul className="text-muted-foreground mb-4 list-disc pl-6">
                 <li>Email us at: privacy@omninetsolutions.com</li>
-                <li>Call us at: 1-800-555-0199</li>
+                <li>Call us at: (888) 622-1618</li>
                 <li>Submit a request through our Contact page</li>
               </ul>
               
