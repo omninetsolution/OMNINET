@@ -9,53 +9,53 @@ const useCases = [
   {
     id: "gaming",
     icon: Gamepad2,
-    title: "Gaming",
-    subtitle: "Zero Lag Experience",
-    description: "Dominate with ultra-low latency connections. Our fiber network delivers ping rates under 10ms for competitive gaming without interruption.",
+    title: "Gamers",
+    subtitle: "Understanding Speed Needs",
+    description: "We help gamers understand latency requirements, bandwidth needs for streaming and gaming, and how to optimize their connection for competitive play.",
     image: featureGaming,
     stats: [
-      { label: "Ping", value: "<10ms" },
-      { label: "Jitter", value: "Minimal" },
-      { label: "Stability", value: "99.9%" }
+      { label: "Guidance On", value: "Ping/Latency" },
+      { label: "Help With", value: "Setup Tips" },
+      { label: "Advice", value: "ISP Options" }
     ]
   },
   {
     id: "remote-work",
     icon: Briefcase,
-    title: "Remote Work",
-    subtitle: "Professional Performance",
-    description: "Crystal-clear video calls, instant file transfers, and reliable VPN connections. Work from home like you're at the office.",
+    title: "Remote Workers",
+    subtitle: "Professional Connectivity",
+    description: "Get guidance on internet speeds for video conferencing, VPN requirements, and ensuring reliable connectivity for work-from-home success.",
     image: featureWorkFromHome,
     stats: [
-      { label: "Upload", value: "940 Mbps" },
-      { label: "Calls", value: "4K Ready" },
-      { label: "Uptime", value: "99.9%" }
+      { label: "Guidance On", value: "Upload Speed" },
+      { label: "Help With", value: "Video Calls" },
+      { label: "Advice", value: "Reliability" }
     ]
   },
   {
     id: "smart-home",
     icon: Home,
-    title: "Smart Home",
-    subtitle: "Connected Living",
-    description: "Power all your IoT devices simultaneously. Smart cameras, thermostats, locks, and more - all connected seamlessly.",
+    title: "Smart Home Users",
+    subtitle: "Connected Device Help",
+    description: "Learn about bandwidth requirements for IoT devices, router recommendations, and network setup guidance for whole-home connectivity.",
     image: featureSmartHome,
     stats: [
-      { label: "Devices", value: "100+" },
-      { label: "Coverage", value: "Whole Home" },
-      { label: "Security", value: "WPA3" }
+      { label: "Guidance On", value: "Device Load" },
+      { label: "Help With", value: "Coverage" },
+      { label: "Advice", value: "Security" }
     ]
   },
   {
     id: "streaming",
     icon: Play,
-    title: "Streaming",
-    subtitle: "4K Entertainment",
-    description: "Stream in 4K on multiple devices without buffering. Enjoy unlimited entertainment with the whole family at once.",
+    title: "Streamers",
+    subtitle: "Entertainment Guidance",
+    description: "Understand speed requirements for 4K streaming, multiple device usage, and choosing between cable TV and streaming service alternatives.",
     image: heroEntertainment,
     stats: [
-      { label: "Quality", value: "4K HDR" },
-      { label: "Streams", value: "10+" },
-      { label: "Buffer", value: "Zero" }
+      { label: "Guidance On", value: "4K Needs" },
+      { label: "Help With", value: "Multi-Stream" },
+      { label: "Advice", value: "Alternatives" }
     ]
   }
 ];
@@ -70,14 +70,17 @@ const UseCasesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1 rounded-full bg-accent/10 text-accent text-sm font-medium mb-4">
-            Perfect For Every Need
+            Guidance For Everyone
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Built for How
-            <span className="text-gradient-accent"> You Live</span>
+            We Help With
+            <span className="text-gradient-accent"> Your Specific Needs</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Whether you're gaming, working, or streaming, our network delivers exceptional performance.
+          <p className="text-lg text-muted-foreground mb-4">
+            Whether you're gaming, working, or streaming, we provide tailored guidance for your connectivity situation.
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            <strong>Not an ISP.</strong> We provide educational guidance and consultation services.
           </p>
         </div>
 

@@ -1,33 +1,24 @@
 import { Link } from "react-router-dom";
-import { Wifi, Tv, Package } from "lucide-react";
+import { Wifi, Tv } from "lucide-react";
 import serviceInternet from "@/assets/service-internet.jpg";
 import serviceCable from "@/assets/service-cable.jpg";
-import serviceBundle from "@/assets/service-bundle.jpg";
 
 const services = [
   {
-    title: "High-Speed Internet",
-    description: "Lightning-fast fiber internet with speeds up to 1 Gbps. Stream, game, and work without limits.",
+    title: "Internet Service Guidance",
+    description: "Get help understanding internet speed requirements, provider options, and setup processes. Independent advice for your connectivity needs.",
     icon: Wifi,
     image: serviceInternet,
     link: "/internet",
     color: "primary"
   },
   {
-    title: "Premium Cable TV",
-    description: "250+ HD channels including sports, movies, and premium networks. Never miss a moment.",
+    title: "Cable TV Assistance",
+    description: "Navigate cable TV packages, equipment options, and streaming alternatives. Unbiased guidance to help you make informed decisions.",
     icon: Tv,
     image: serviceCable,
     link: "/cable-tv",
     color: "accent"
-  },
-  {
-    title: "Bundle & Save",
-    description: "Combine internet and TV for maximum savings. Get the best of both worlds at unbeatable prices.",
-    icon: Package,
-    image: serviceBundle,
-    link: "/bundles",
-    color: "secondary"
   }
 ];
 
@@ -36,20 +27,22 @@ const ServicesSection = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Our <span className="text-gradient">Services</span>
+            Our <span className="text-gradient">Guidance Services</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Explore our independent guidance services for navigating connectivity options and finding solutions tailored to your household
+          <p className="text-lg text-muted-foreground mb-4">
+            We help you navigate connectivity service options with independent, unbiased guidance
           </p>
-          <p className="text-sm text-muted-foreground mt-4 italic">
-            Note: We provide education and assistance only. We do not sell or install internet, cable, or streaming services.
-          </p>
+          <div className="bg-muted/50 border border-border rounded-lg p-4 mt-6">
+            <p className="text-sm text-muted-foreground">
+              <strong className="text-foreground">Not an ISP.</strong> We provide education and assistance only. We do not sell, install, or represent any internet, cable, or streaming service.
+            </p>
+          </div>
         </div>
         
         {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <Link
               key={service.title}

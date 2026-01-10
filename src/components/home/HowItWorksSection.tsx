@@ -5,20 +5,20 @@ import stepSupport from "@/assets/step-support.jpg";
 const steps = [
   {
     number: "01",
-    title: "Choose Your Plan",
-    description: "Browse our internet and TV packages to find the perfect fit for your home and lifestyle.",
+    title: "Call for Guidance",
+    description: "Reach out to our independent advisors to discuss your internet, cable TV, or connectivity questions.",
     image: stepOrder
   },
   {
     number: "02",
-    title: "Professional Installation",
-    description: "Our certified technicians will install and set up everything for optimal performance.",
+    title: "Get Expert Advice",
+    description: "Receive unbiased guidance on service options, provider comparisons, and practical setup tips.",
     image: stepInstall
   },
   {
     number: "03",
-    title: "Enjoy & Get Support",
-    description: "Start enjoying blazing-fast internet and premium TV with 24/7 support whenever you need it.",
+    title: "Make Informed Decisions",
+    description: "Armed with knowledge, navigate the service provider process confidently with our ongoing support.",
     image: stepSupport
   }
 ];
@@ -28,12 +28,15 @@ const HowItWorksSection = () => {
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            How It <span className="text-gradient">Works</span>
+            How We <span className="text-gradient">Help You</span>
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Getting connected is easy. Follow these simple steps to start your journey.
+          <p className="text-lg text-muted-foreground mb-4">
+            Getting expert guidance is easy. Follow these simple steps to get started.
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            <strong>Not an ISP.</strong> We provide independent consultation services only.
           </p>
         </div>
         

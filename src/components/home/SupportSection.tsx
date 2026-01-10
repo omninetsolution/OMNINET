@@ -5,22 +5,22 @@ import supportTeam from "@/assets/support-team.jpg";
 const supportChannels = [
   {
     icon: Phone,
-    title: "Call Us",
-    description: "Speak directly with our independent assistance experts",
+    title: "Call for Guidance",
+    description: "Speak with our independent advisors about connectivity options",
     action: "(888) 622-1618",
     available: "24/7"
   },
   {
     icon: MessageCircle,
-    title: "Live Chat",
-    description: "Get instant answers from our support team",
+    title: "Chat Assistance",
+    description: "Get quick answers about service options and processes",
     action: "Start Chat",
     available: "24/7"
   },
   {
     icon: Mail,
-    title: "Email Support",
-    description: "Send us your inquiry for personalized assistance",
+    title: "Email Consultation",
+    description: "Send your connectivity questions for detailed guidance",
     action: "support@omninetsolutions.com",
     available: "Response in 2hrs"
   }

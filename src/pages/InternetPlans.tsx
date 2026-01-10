@@ -1,72 +1,43 @@
 import { Link } from "react-router-dom";
-import { Check, Zap, Phone } from "lucide-react";
+import { HelpCircle, Phone, Shield, Users, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageBanner from "@/components/PageBanner";
 import internetBanner from "@/assets/internet-plans-banner.jpg";
 
-const plans = [
+const guidanceAreas = [
   {
-    name: "Starter",
-    speed: "100",
-    price: "49.99",
-    features: [
-      "100 Mbps download speed",
-      "10 Mbps upload speed",
-      "Unlimited data",
-      "Free modem rental",
-      "Email support",
-      "Basic parental controls"
-    ],
-    recommended: false
+    title: "Understanding Speed Requirements",
+    description: "Learn what internet speeds you actually need for your household activities.",
+    points: [
+      "Streaming video requirements",
+      "Work-from-home bandwidth needs",
+      "Gaming and large downloads",
+      "Multiple device usage",
+      "Future-proofing your connection"
+    ]
   },
   {
-    name: "Performance",
-    speed: "300",
-    price: "69.99",
-    features: [
-      "300 Mbps download speed",
-      "30 Mbps upload speed",
-      "Unlimited data",
-      "Free WiFi router",
-      "24/7 phone support",
-      "Advanced parental controls",
-      "Free installation"
-    ],
-    recommended: false
+    title: "Comparing Service Options",
+    description: "Get help understanding different internet service types and providers in your area.",
+    points: [
+      "Fiber vs Cable vs DSL",
+      "Provider availability research",
+      "Contract terms guidance",
+      "Equipment requirements",
+      "Hidden fees to watch for"
+    ]
   },
   {
-    name: "Pro",
-    speed: "500",
-    price: "79.99",
-    features: [
-      "500 Mbps download speed",
-      "50 Mbps upload speed",
-      "Unlimited data",
-      "Premium WiFi router",
-      "Priority 24/7 support",
-      "Advanced security suite",
-      "Free installation",
-      "1 month free"
-    ],
-    recommended: true
-  },
-  {
-    name: "Ultra",
-    speed: "1000",
-    price: "99.99",
-    features: [
-      "1 Gbps download speed",
-      "100 Mbps upload speed",
-      "Unlimited data",
-      "Mesh WiFi system (3 units)",
-      "VIP priority support",
-      "Full security suite",
-      "Free professional setup",
-      "2 months free",
-      "Static IP included"
-    ],
-    recommended: false
+    title: "Setup & Troubleshooting",
+    description: "Navigate the process of getting connected and resolving common issues.",
+    points: [
+      "Installation process guidance",
+      "Self-installation tips",
+      "Router placement advice",
+      "Connection optimization",
+      "When to contact your ISP"
+    ]
   }
 ];
 
@@ -76,77 +47,95 @@ const InternetPlans = () => {
       <Navbar />
       <main>
         <PageBanner 
-          title="Internet Plans"
-          subtitle="Lightning-fast fiber internet for every need. Choose the speed that powers your lifestyle."
+          title="Internet Service Guidance"
+          subtitle="Get independent help understanding internet service options. We guide you through speed requirements, provider comparison, and setup assistance."
           backgroundImage={internetBanner}
         />
         
-        {/* Plans Grid */}
+        {/* Disclaimer Section */}
+        <section className="py-8 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto bg-background border border-border rounded-lg p-6">
+              <div className="flex items-start gap-3">
+                <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-foreground mb-2">Important Disclosure</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <strong>We are NOT an Internet Service Provider (ISP).</strong> OMNINET SOLUTIONS is an independent third-party guidance service. 
+                    We are not affiliated with, authorized by, or endorsed by any telecom or cable company. We do not sell official ISP services or provide guaranteed technical fixes. 
+                    All provider mentions are for informational purposes only. Service fees apply for our consultation services.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Guidance Areas */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {plans.map((plan) => (
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+                How We <span className="text-gradient">Help You</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Our independent advisors help you navigate the complex world of internet service selection and setup
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {guidanceAreas.map((area, index) => (
                 <div
-                  key={plan.name}
-                  className={`card-plan ${
-                    plan.recommended ? "border-primary ring-2 ring-primary/20" : ""
-                  }`}
+                  key={area.title}
+                  className="card-plan"
                 >
-                  {plan.recommended && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                      <span className="bg-primary text-primary-foreground text-sm font-bold px-4 py-1 rounded-full">
-                        Best Value
-                      </span>
+                  <div className="mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <HelpCircle className="w-6 h-6 text-primary" />
                     </div>
-                  )}
-                  
-                  <div className="text-center mb-6">
                     <h3 className="font-display text-xl font-bold text-foreground mb-2">
-                      {plan.name}
+                      {area.title}
                     </h3>
-                    <div className="flex items-center justify-center gap-2 text-primary">
-                      <Zap className="w-5 h-5" />
-                      <span className="font-bold text-lg">{plan.speed} Mbps</span>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center mb-6">
-                    <div className="flex items-end justify-center gap-1">
-                      <span className="text-muted-foreground">$</span>
-                      <span className="text-4xl font-bold text-foreground">{plan.price}</span>
-                      <span className="text-muted-foreground">/mo</span>
-                    </div>
+                    <p className="text-muted-foreground text-sm">
+                      {area.description}
+                    </p>
                   </div>
                   
                   <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
+                    {area.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">{point}</span>
                       </li>
                     ))}
                   </ul>
-                  
-                  <a
-                    href="tel:+18005550199"
-                    className={`flex items-center justify-center gap-2 text-center py-3 px-4 rounded-xl font-bold transition-all text-sm sm:text-base ${
-                      plan.recommended
-                        ? "btn-hero-primary"
-                        : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
-                    }`}
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
-                    <span className="sm:hidden">Call Now</span>
-                  </a>
                 </div>
               ))}
             </div>
-            
-            <p className="text-center text-sm text-muted-foreground mt-8">
-              *Prices shown are for new customers. Taxes and fees may apply. 
-              Availability varies by location.
-            </p>
+          </div>
+        </section>
+        
+        {/* CTA Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Ready to Get <span className="text-gradient">Expert Guidance</span>?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Talk to our independent advisors about your internet service needs
+              </p>
+              <a
+                href="tel:+18886221618"
+                className="btn-hero-primary inline-flex items-center justify-center gap-2 text-base"
+              >
+                <Phone className="w-5 h-5" />
+                Call for Independent Service Guidance
+              </a>
+              <p className="text-sm text-muted-foreground mt-6">
+                <strong>Not an ISP. No brand affiliation.</strong> Independent third-party guidance service.
+              </p>
+            </div>
           </div>
         </section>
       </main>

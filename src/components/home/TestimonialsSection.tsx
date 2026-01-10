@@ -8,21 +8,21 @@ const testimonials = [
     name: "Michael Thompson",
     role: "Work From Home Professional",
     image: testimonial1,
-    quote: "Since switching to OMNINET SOLUTIONS, my video calls never buffer and my uploads are lightning fast. Game changer for remote work!",
+    quote: "The guidance I received helped me understand exactly what internet speed I needed for my home office. Very knowledgeable and unbiased advice!",
     rating: 5
   },
   {
     name: "Sarah Chen",
-    role: "Streaming Enthusiast",
+    role: "Family of 5",
     image: testimonial2,
-    quote: "We have 5 people streaming different things at once and it handles everything perfectly. Best internet we have ever had.",
+    quote: "They helped us navigate all the confusing cable TV packages and explained our streaming options. No pressure to choose anything specific - just honest guidance.",
     rating: 5
   },
   {
     name: "Robert Martinez",
     role: "Retired Teacher",
     image: testimonial3,
-    quote: "The installation was quick and professional. The customer support is always helpful when I have questions. Highly recommend!",
+    quote: "As someone not tech-savvy, I appreciated their patient explanations about internet services. They made the whole process much less overwhelming.",
     rating: 5
   }
 ];
@@ -32,12 +32,15 @@ const TestimonialsSection = () => {
     <section className="py-24 bg-card">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            What Our <span className="text-gradient">Customers</span> Say
+            What Our <span className="text-gradient">Clients</span> Say
           </h2>
-          <p className="text-lg text-muted-foreground">
-            Join thousands of satisfied customers who made the switch
+          <p className="text-lg text-muted-foreground mb-4">
+            See how our independent guidance has helped others navigate connectivity decisions
+          </p>
+          <p className="text-sm text-muted-foreground italic">
+            <strong>Not an ISP.</strong> These are reviews of our guidance services, not internet service quality.
           </p>
         </div>
         

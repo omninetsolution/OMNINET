@@ -10,7 +10,6 @@ import Chatbot from "@/components/Chatbot";
 import Index from "./pages/Index";
 import InternetPlans from "./pages/InternetPlans";
 import CableTVPlans from "./pages/CableTVPlans";
-import Bundles from "./pages/Bundles";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
@@ -53,7 +52,6 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/internet" element={<InternetPlans />} />
           <Route path="/cable-tv" element={<CableTVPlans />} />
-          <Route path="/bundles" element={<Bundles />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<FAQ />} />

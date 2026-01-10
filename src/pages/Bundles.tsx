@@ -1,53 +1,46 @@
-import { Check, Package, Sparkles, Phone } from "lucide-react";
+import { HelpCircle, Phone, Shield, CheckCircle, Package } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageBanner from "@/components/PageBanner";
 import bundlesBanner from "@/assets/bundles-banner.jpg";
 
-const bundles = [
+const guidanceAreas = [
   {
-    name: "Essentials Bundle",
-    internet: "100 Mbps",
-    tv: "100+ channels",
-    price: "79.99",
-    savings: "10",
-    features: [
-      "100 Mbps high-speed internet",
-      "100+ HD channels",
-      "Free modem & DVR",
-      "Unlimited data",
-      "24/7 support"
-    ],
-    recommended: false
+    title: "Understanding Bundle Options",
+    description: "Learn how combining services works and whether bundling makes sense for you.",
+    points: [
+      "Internet + TV bundle basics",
+      "Triple play packages explained",
+      "Contract terms comparison",
+      "True cost analysis",
+      "Provider bundle differences"
+    ]
   },
   {
-    name: "Family Bundle",
-    internet: "300 Mbps",
-    tv: "175+ channels",
-    price: "109.99",
-    savings: "20",
-    features: [
-      "300 Mbps high-speed internet",
-      "175+ HD channels",
-      "Premium WiFi router",
-      "2 DVRs included",
-      "Sports package",
-      "Parental controls",
-      "Free installation"
-    ],
-    recommended: false
+    title: "Evaluating Savings Claims",
+    description: "Get help understanding if advertised bundle savings are actually beneficial.",
+    points: [
+      "Reading bundle pricing fine print",
+      "Promotional period limitations",
+      "Hidden fees to watch for",
+      "Equipment rental costs",
+      "Long-term cost projections"
+    ]
   },
   {
-    name: "Pro Bundle",
-    internet: "500 Mbps",
-    tv: "250+ channels",
-    price: "139.99",
-    savings: "30",
-    features: [
-      "500 Mbps high-speed internet",
-      "250+ HD channels",
-      "Mesh WiFi system",
-      "3 DVRs included",
+    title: "Alternative Solutions",
+    description: "Explore modern alternatives to traditional service bundles.",
+    points: [
+      "Standalone service comparison",
+      "Streaming + internet options",
+      "Mix-and-match strategies",
+      "Cost optimization tips",
+      "Flexibility vs savings tradeoffs"
+    ]
+  }
+];
+
+const Bundles = () => {
       "All sports packages",
       "Premium movie channels",
       "Free professional setup",
@@ -82,74 +75,135 @@ const Bundles = () => {
       <Navbar />
       <main>
         <PageBanner 
-          title="Bundle & Save"
-          subtitle="Combine internet and TV for maximum value. Save up to $50/month!"
+          title="Service Bundle Guidance"
+          subtitle="Get independent advice on bundled services. Understand if combining internet and TV makes sense for your situation."
           backgroundImage={bundlesBanner}
         />
         
+        {/* Disclaimer Section */}
+        <section className="py-8 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto bg-background border border-border rounded-lg p-6">
+              <div className="flex items-start gap-3">
+                <Shield className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="font-bold text-foreground mb-2">Independent Bundle Analysis</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    <strong>We do NOT sell bundled services.</strong> OMNINET SOLUTIONS provides independent guidance on service bundles. 
+                    We are not affiliated with any service provider and do not receive commissions from telecoms. 
+                    Our advice is unbiased and focused on helping you understand your options. Service fees apply for consultations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Guidance Areas */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {bundles.map((bundle) => (
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+                Bundle Service <span className="text-gradient">Navigation Help</span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Our independent advisors help you understand if bundling services is right for you
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {guidanceAreas.map((area, index) => (
                 <div
-                  key={bundle.name}
-                  className={`card-plan ${
-                    bundle.recommended ? "border-primary ring-2 ring-primary/20" : ""
-                  }`}
+                  key={area.title}
+                  className="card-plan"
                 >
-                  {bundle.recommended && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                      <span className="bg-primary text-primary-foreground text-sm font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                        <Sparkles className="w-4 h-4" />
-                        Best Value
-                      </span>
+                  <div className="mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                      <Package className="w-6 h-6 text-primary" />
                     </div>
-                  )}
-                  
-                  <div className="text-center mb-4">
                     <h3 className="font-display text-xl font-bold text-foreground mb-2">
-                      {bundle.name}
+                      {area.title}
                     </h3>
-                    <div className="flex items-center justify-center gap-2 text-primary mb-1">
-                      <Package className="w-5 h-5" />
-                      <span className="font-medium text-sm">{bundle.internet} + {bundle.tv}</span>
-                    </div>
-                    <span className="inline-block bg-accent/20 text-accent text-xs font-bold px-2 py-1 rounded-full">
-                      Save ${bundle.savings}/mo
-                    </span>
+                    <p className="text-muted-foreground text-sm">
+                      {area.description}
+                    </p>
                   </div>
                   
-                  <div className="text-center mb-6">
-                    <div className="flex items-end justify-center gap-1">
-                      <span className="text-muted-foreground">$</span>
-                      <span className="text-4xl font-bold text-foreground">{bundle.price}</span>
-                      <span className="text-muted-foreground">/mo</span>
-                    </div>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-8">
-                    {bundle.features.map((feature) => (
-                      <li key={feature} className="flex items-start gap-2">
-                        <Check className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                        <span className="text-sm text-muted-foreground">{feature}</span>
+                  <ul className="space-y-3 mb-8">
+                    {area.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                        <span className="text-sm text-muted-foreground">{point}</span>
                       </li>
                     ))}
                   </ul>
-                  
-                  <a
-                    href="tel:+18005550199"
-                    className={`flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold transition-all text-sm sm:text-base ${
-                      bundle.recommended
-                        ? "btn-hero-primary"
-                        : "bg-muted text-foreground hover:bg-primary hover:text-primary-foreground"
-                    }`}
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span className="hidden sm:inline">Call Now: (888) 622-1618</span>
-                    <span className="sm:hidden">Call Now</span>
-                  </a>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+        
+        {/* What We Do Section */}
+        <section className="py-20 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+                What We <span className="text-gradient">Do & Don't Do</span>
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-background border-2 border-primary/20 rounded-lg p-6">
+                  <h3 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary" />
+                    What We DO
+                  </h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• Help you understand service bundle options</li>
+                    <li>• Provide practical guidance on connectivity</li>
+                    <li>• Explain how to navigate provider processes</li>
+                    <li>• Offer independent consultation</li>
+                    <li>• Compare different bundle structures</li>
+                  </ul>
+                </div>
+                
+                <div className="bg-background border-2 border-destructive/20 rounded-lg p-6">
+                  <h3 className="font-bold text-lg text-foreground mb-4 flex items-center gap-2">
+                    <Shield className="w-5 h-5 text-destructive" />
+                    What We DON'T Do
+                  </h3>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li>• We are NOT an internet service provider (ISP)</li>
+                    <li>• We are NOT affiliated with any telecom/cable company</li>
+                    <li>• We do NOT sell official ISP services</li>
+                    <li>• We do NOT provide guaranteed technical fixes</li>
+                    <li>• We do NOT represent any brand</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* CTA Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Need Help Understanding <span className="text-gradient">Bundle Options</span>?
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Talk to an independent advisor about service bundling strategies
+              </p>
+              <a
+                href="tel:+18886221618"
+                className="btn-hero-primary inline-flex items-center justify-center gap-2 text-base"
+              >
+                <Phone className="w-5 h-5" />
+                Call for Bundle Guidance
+              </a>
+              <p className="text-sm text-muted-foreground mt-6">
+                <strong>Not an ISP. No brand affiliation.</strong> Independent third-party guidance service.
+              </p>
             </div>
           </div>
         </section>

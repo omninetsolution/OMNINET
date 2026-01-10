@@ -1,40 +1,40 @@
-import { Zap, Shield, Headphones, Download, Wifi, Globe } from "lucide-react";
+import { Zap, Shield, Headphones, Users, BookOpen, CheckCircle } from "lucide-react";
 
 const features = [
   {
-    icon: Zap,
-    title: "Lightning Fast Speeds",
-    description: "Experience blazing-fast downloads up to 1 Gbps with our fiber-optic network.",
+    icon: Users,
+    title: "Independent Advisors",
+    description: "Get unbiased guidance from advisors who are not affiliated with any internet or cable provider.",
     color: "primary"
   },
   {
     icon: Shield,
-    title: "Enterprise Security",
-    description: "Advanced threat protection and encrypted connections keep your data safe.",
+    title: "No Brand Affiliation",
+    description: "We don't receive commissions from providers. Our only goal is helping you make informed decisions.",
     color: "accent"
   },
   {
     icon: Headphones,
-    title: "24/7 Expert Support",
-    description: "Our dedicated team is always available to help you with any issues.",
+    title: "24/7 Consultation Support",
+    description: "Our guidance team is available around the clock to help you navigate connectivity questions.",
     color: "secondary"
   },
   {
-    icon: Download,
-    title: "Unlimited Data",
-    description: "No data caps or throttling. Stream, download, and browse without limits.",
+    icon: BookOpen,
+    title: "Educational Resources",
+    description: "Learn about internet speeds, cable packages, and service options through our comprehensive guides.",
     color: "primary"
   },
   {
-    icon: Wifi,
-    title: "Whole-Home WiFi",
-    description: "Mesh networking ensures strong coverage in every room of your home.",
+    icon: Zap,
+    title: "Quick Answers",
+    description: "Get fast, clear explanations about connectivity issues and service provider processes.",
     color: "accent"
   },
   {
-    icon: Globe,
-    title: "Global Coverage",
-    description: "Reliable connectivity whether you're at home or on the go.",
+    icon: CheckCircle,
+    title: "Practical Guidance",
+    description: "Receive actionable advice on setup, troubleshooting, and navigating service options.",
     color: "secondary"
   }
 ];
@@ -53,11 +53,14 @@ const FeaturesSection = () => {
             Why Choose Us
           </span>
           <h2 className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-3 sm:mb-4 lg:mb-6">
-            Everything You Need for
-            <span className="text-gradient"> Seamless Connectivity</span>
+            Independent Guidance You Can
+            <span className="text-gradient"> Trust</span>
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground">
-            We provide industry-leading features that make your internet experience exceptional.
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground mb-4">
+            We provide unbiased assistance to help you navigate connectivity service options.
+          </p>
+          <p className="text-xs sm:text-sm text-muted-foreground italic">
+            <strong>Not an ISP.</strong> We don't sell services - we help you understand them.
           </p>
         </div>
 

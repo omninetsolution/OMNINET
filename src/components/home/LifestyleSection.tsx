@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import lifestyleFamily from "@/assets/lifestyle-family.jpg";
 import { CheckCircle } from "lucide-react";
 
 const features = [
-  "Stream 4K content on multiple devices simultaneously",
-  "Crystal-clear video calls for remote work",
-  "Lag-free gaming for the whole family",
-  "Smart home devices connected seamlessly",
-  "Reliable connection in every room"
+  "Understand speed requirements for 4K streaming",
+  "Learn about bandwidth needs for remote work",
+  "Get guidance on gaming internet requirements",
+  "Discover smart home connectivity tips",
+  "Navigate whole-home coverage solutions"
 ];
 
 const LifestyleSection = () => {
@@ -36,11 +35,11 @@ const LifestyleSection = () => {
           {/* Content */}
           <div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Entertainment <span className="text-gradient-accent">Redefined</span> for Modern Living
+              Understanding Your <span className="text-gradient-accent">Connectivity Needs</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Transform your home into an entertainment hub. With our high-speed internet 
-              and premium cable TV, experience movies, shows, and games like never before.
+              Get expert guidance on what internet speeds and service options make sense for your lifestyle. 
+              We help you understand the technology so you can make informed decisions.
             </p>
             
             <ul className="space-y-4 mb-10">
@@ -52,9 +51,15 @@ const LifestyleSection = () => {
               ))}
             </ul>
             
-            <Link to="/bundles" className="btn-hero-primary inline-block">
-              Explore Bundle Deals
-            </Link>
+            <div className="bg-muted/50 border border-border rounded-lg p-4 mb-6">
+              <p className="text-sm text-muted-foreground">
+                <strong className="text-foreground">Not an ISP.</strong> We provide educational guidance, not internet service.
+              </p>
+            </div>
+            
+            <a href="tel:+18886221618" className="btn-hero-primary inline-block">
+              Call for Expert Guidance
+            </a>
           </div>
         </div>
       </div>

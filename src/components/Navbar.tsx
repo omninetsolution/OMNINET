@@ -10,7 +10,6 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "Internet", path: "/internet" },
     { name: "Cable TV", path: "/cable-tv" },
-    { name: "Bundles", path: "/bundles" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
