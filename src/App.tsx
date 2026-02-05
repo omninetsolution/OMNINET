@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import ScrollToTop from "@/components/ScrollToTop";
 import StickyCallButton from "@/components/StickyCallButton";
 import Chatbot from "@/components/Chatbot";
+import SupportPopup from "@/components/SupportPopup";
 import Index from "./pages/Index";
 import InternetPlans from "./pages/InternetPlans";
 import CableTVPlans from "./pages/CableTVPlans";
@@ -48,6 +49,7 @@ const App = () => (
         <ScrollToTop />
         <StickyCallButton />
         <Chatbot />
+        <SupportPopup />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/internet" element={<InternetPlans />} />
