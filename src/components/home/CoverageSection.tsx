@@ -44,7 +44,7 @@ const CoverageSection = () => {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="tel:+18886221618" className="btn-hero-primary flex items-center justify-center gap-2 whitespace-nowrap">
+              <a href="tel:+18887105571" className="btn-hero-primary flex items-center justify-center gap-2 whitespace-nowrap">
                 <Phone className="w-5 h-5" />
                 Call for Guidance
               </a>
@@ -83,7 +83,7 @@ const CoverageSection = () => {
             </div>
 
             <a 
-              href="tel:+18886221618" 
+              href="tel:+18887105571" 
               className="inline-flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all"
             >
               Call for Expert Guidance

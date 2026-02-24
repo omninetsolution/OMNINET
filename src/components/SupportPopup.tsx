@@ -3,8 +3,8 @@ import { Phone, X } from "lucide-react";
 
 const SupportPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = "(888) 622-1618";
-  const phoneLink = "tel:+18886221618";
+  const phoneNumber = "(888) 710-5571";
+  const phoneLink = "tel:+18887105571";
 
   useEffect(() => {
     // Show popup after 5 seconds

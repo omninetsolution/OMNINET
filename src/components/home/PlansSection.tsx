@@ -106,7 +106,7 @@ const PlansSection = () => {
               
               {/* CTA */}
               <a
-                href="tel:+18886221618"
+                href="tel:+18887105571"
                 className={`flex items-center justify-center gap-2 py-3 px-4 rounded-lg sm:rounded-xl font-bold transition-all text-sm sm:text-base touch-manipulation ${
                   service.popular
                     ? "btn-hero-primary"

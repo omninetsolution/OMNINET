@@ -57,7 +57,7 @@ const LifestyleSection = () => {
               </p>
             </div>
             
-            <a href="tel:+18886221618" className="btn-hero-primary inline-block">
+            <a href="tel:+18887105571" className="btn-hero-primary inline-block">
               Call for Expert Guidance
             </a>
           </div>

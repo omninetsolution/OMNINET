@@ -126,7 +126,7 @@ const InternetPlans = () => {
                 Talk to our independent advisors about your internet service needs
               </p>
               <a
-                href="tel:+18886221618"
+                href="tel:+18887105571"
                 className="btn-hero-primary inline-flex items-center justify-center gap-2 text-base"
               >
                 <Phone className="w-5 h-5" />
