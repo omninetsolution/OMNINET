@@ -126,7 +126,7 @@ const CableTVPlans = () => {
                 Get independent cable TV assistance from third-party advisors
               </p>
               <a
-                href="tel:+18887105571"
+                href="tel:+18886653707"
                 className="bg-accent text-accent-foreground hover:opacity-90 inline-flex items-center justify-center gap-2 text-base px-8 py-4 rounded-xl font-bold transition-all"
               >
                 <Phone className="w-5 h-5" />

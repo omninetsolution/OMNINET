@@ -7,7 +7,7 @@ const supportChannels = [
     icon: Phone,
     title: "Call for Guidance",
     description: "Speak with our independent advisors about connectivity options",
-    action: "(888) 710-5571",
+    action: "(888) 665-3707",
     available: "24/7"
   },
   {

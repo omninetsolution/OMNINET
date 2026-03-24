@@ -37,21 +37,21 @@ const Chatbot = () => {
     const lowerMessage = message.toLowerCase();
     
     if (lowerMessage.includes("call") || lowerMessage.includes("phone") || lowerMessage.includes("contact")) {
-      return "You can reach our assistance team at (888) 710-5571. We're available 24/7 to help you!";
+      return "You can reach our assistance team at (888) 665-3707. We're available 24/7 to help you!";
     } else if (lowerMessage.includes("service") || lowerMessage.includes("help") || lowerMessage.includes("assist")) {
       return "We provide independent guidance for internet, cable TV, and streaming services. We charge a separate service fee for our assistance. Would you like to speak with our team?";
     } else if (lowerMessage.includes("price") || lowerMessage.includes("cost") || lowerMessage.includes("fee")) {
-      return "Our service fees vary based on the type of assistance you need. Please call (888) 710-5571 to speak with our team for detailed pricing information.";
+      return "Our service fees vary based on the type of assistance you need. Please call (888) 665-3707 to speak with our team for detailed pricing information.";
     } else if (lowerMessage.includes("refund")) {
       return "We offer refunds within 7-15 days of service purchase, subject to eligibility. Visit our Refund Policy page for details.";
     } else {
-      return "Thank you for your message! For personalized assistance, please call us at (888) 710-5571 or email support@omninetsolutions.com. Our team is here to help!";
+      return "Thank you for your message! For personalized assistance, please call us at (888) 665-3707 or email support@omninetsolutions.com. Our team is here to help!";
     }
   };
 
   const handleQuickReply = (reply: string) => {
     if (reply === "Call Support") {
-      window.location.href = "tel:+18887105571";
+      window.location.href = "tel:+18886653707";
     } else if (reply === "View Services") {
       window.location.href = "/internet";
     } else if (reply === "Request Assistance") {

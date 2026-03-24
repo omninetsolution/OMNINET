@@ -58,9 +58,9 @@ const About = () => {
                 to assist you through every step of the process, answering questions and providing clarity 
                 in an often-confusing marketplace.
               </p>
-              <a href="tel:+18887105571" className="btn-hero-primary inline-flex items-center gap-2">
+              <a href="tel:+18886653707" className="btn-hero-primary inline-flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                Call Now: (888) 710-5571
+                Call Now: (888) 665-3707
               </a>
             </div>
           </div>

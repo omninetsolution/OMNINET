@@ -80,7 +80,7 @@ const Disclaimer = () => {
               <p className="text-muted-foreground mb-4">
                 For questions about this disclaimer:<br />
                 Email: legal@omninetsolutions.com<br />
-                Phone: (888) 710-5571
+                Phone: (888) 665-3707
               </p>
             </div>
           </div>

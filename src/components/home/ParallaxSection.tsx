@@ -40,7 +40,7 @@ const ParallaxSection = () => {
           </p>
         </div>
         
-        <a href="tel:+18887105571" className="btn-hero-primary">
+        <a href="tel:+18886653707" className="btn-hero-primary">
           Call for Guidance
         </a>
       </div>

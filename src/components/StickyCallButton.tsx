@@ -1,8 +1,8 @@
 import { Phone } from "lucide-react";
 
 const StickyCallButton = () => {
-  const phoneNumber = "(888) 710-5571";
-  const phoneLink = "tel:+18887105571";
+  const phoneNumber = "(888) 665-3707";
+  const phoneLink = "tel:+18886653707";
 
   return (
     <a
